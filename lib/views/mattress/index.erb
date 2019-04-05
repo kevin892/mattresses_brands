@@ -1,0 +1,17 @@
+<h1>Mattresses</h1>
+<ol>
+  <%@mattresses.each do |mattress|%>
+    <li>
+      <a href='<%= "/mattresses/#{mattress.id}"%>'><%= mattress.model %></a>
+      <br>
+      <a href='<%= "/mattresses/#{mattress.id}/edit" %>'>[Edit]</a>
+    </li>
+    <br>
+    <br>
+  <% end %>
+</ol>
+
+<a href="/mattresses/new">Add a mattress!</a>
+<br>
+<br>
+<a href="/brands">Go to Brands Page</a>
